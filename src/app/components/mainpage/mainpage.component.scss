@@ -85,8 +85,15 @@ p:last-of-type{
 .try-again{
   cursor: pointer;
   position: relative;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 600;
+  color: rgba(0,15,52,0.95);
+  letter-spacing: 1px;
+  transition: 0.3s;
+  &:hover {
+    scale: 1.2;
+    color: rgba(34,22,52,0.95);
+  }
 }
 
 .try-again:after{
