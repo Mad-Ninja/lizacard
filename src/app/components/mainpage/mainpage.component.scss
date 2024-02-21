@@ -1,0 +1,360 @@
+.btn {
+	cursor: pointer;
+}
+
+.custom-img {
+	//width: 24px;
+	height: 24px;
+	margin-bottom: 10px;
+}
+
+
+.container {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/images/1685980924_en-idei-club-p-st-valentine-s-day-dizain-pinterest-1.jpg') !important;
+  background-color: #cccccc;
+  background-size: cover;
+  background-position: center center;
+
+  .slider{
+    position: relative;
+    max-width: 60%;
+    height: 500px;
+    top: 50%;
+    left: 20%;
+  }
+  .secret_btn {
+    position: absolute;
+    left: 45vw;
+    top: 300px;
+    font-size:15px;
+    color: rgba(69,0,94,0.86);
+    font-weight: bold;
+    .button-text {
+      visibility: hidden;
+    }
+    &:hover{
+      cursor: pointer;
+      .button-text {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+:root, button{
+  font-family: 'Raleway', serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.color{
+  background: linear-gradient(to right, #e1e0ff, #d7fadd);
+}
+
+body{
+  background: #191919;
+  background: white;
+  user-select: none;
+  letter-spacing: 3px;
+  color: #b9b9b9;
+}
+
+h1{
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+p{
+  padding-bottom: 15px;
+}
+
+p:last-of-type{
+  padding-bottom: 0;
+}
+
+.try-again{
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.try-again:after{
+  content: '';
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+  top: 100%;
+  background: #ebebeb;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.try-again:hover:after{
+  left: 40%;
+  right: 40%;
+}
+
+.wrapper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.syrnikImg {
+  height: 35vw;
+  width: 35vw;
+}
+.button{
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  -webkit-appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.button-text{
+  font-size:12px;
+
+  background: linear-gradient(to right, #504bff, #4cfa63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-circle{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #504bff, 0 0 20px #504bff, 0 0 30px #504bff;
+  transition: all 0.5s ease;
+}
+
+.button-circle2{
+  top: auto;
+  bottom: 0;
+}
+
+.button-circle3{
+  left: auto;
+  right: 0;
+  box-shadow: 0 0 10px #4cfa63, 0 0 20px #4cfa63, 0 0 30px #4cfa63;
+}
+
+.button-circle4{
+  left: auto;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0 10px #4cfa63, 0 0 20px #4cfa63, 0 0 30px #4cfa63;
+}
+
+.button:hover{
+  box-shadow: -15px 0 70px -15px #504bff, 15px 0 70px -15px #4cfa63;
+}
+
+.button:hover .button-circle1{
+  transform: translate(-15px, -15px) scale(0);
+}
+
+.button:hover .button-circle2{
+  transform: translate(-15px, 15px) scale(0);
+}
+
+.button:hover .button-circle3{
+  transform: translate(15px, -15px) scale(0);
+}
+
+.button:hover .button-circle4{
+  transform: translate(15px, 15px) scale(0);
+}
+
+.button:hover .button-circle{
+  box-shadow: none;
+}
+
+.popup{
+  background-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+  height: 45vw;
+  width: 45vw;
+  flex-shrink: 0;
+  border-radius: 3px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease
+}
+
+.popup-inside{
+  background-color: transparent;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 0 black;
+  transition:
+    box-shadow 0.5s ease 0.7s,
+    border-radius 0.35s ease 0.7s;
+}
+
+.backgrounds{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background{
+  --offset: 0;
+  position: absolute;
+  left: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  top: var(--offset);
+  background: linear-gradient(to right, #504bff, #4cfa63);
+  transform: scale(0);
+  transition: all 0.5s ease 0s;
+  border-radius: 50%;
+}
+
+.background2{
+  --offset: 10%;
+  position: absolute;
+  left: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  top: var(--offset);
+  background: linear-gradient(to right, #6665ff, #69fa7f);
+  transform: scale(0);
+  transition: all 0.5s ease 0.1s;
+}
+
+.background3{
+  --offset: 20%;
+  position: absolute;
+  left: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  top: var(--offset);
+  background: linear-gradient(to right, #8583ff, #85fa99);
+  z-index: 2;
+  transition: all 0.5s ease 0.2s;
+}
+
+.background4{
+  --offset: 30%;
+  position: absolute;
+  left: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  top: var(--offset);
+  background: linear-gradient(to right, #aaaaff, #a7fab7);
+  z-index: 3;
+  transition: all 0.5s ease 0.3s;
+}
+
+.background5{
+  --offset: 40%;
+  position: absolute;
+  left: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  top: var(--offset);
+  background: linear-gradient(to right, #c9c8ff, #c3fad1);
+  z-index: 4;
+  transition: all 0.5s ease 0.4s;
+}
+
+.background6{
+  --offset: 40%;
+  position: absolute;
+  left: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  top: var(--offset);
+  background: white;
+  z-index: 5;
+  transition: all 0.8s ease 0.4s;
+}
+
+.content{
+  background: rgb(255,1,219);
+  background: radial-gradient(circle, rgba(255,1,219,1) 14%, rgba(191,54,228,1) 40%, rgba(160,79,232,1) 67%, rgba(137,98,235,1) 81%, rgba(84,142,243,1) 100%);
+  --offset: 0;
+  position: absolute;
+  left: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  top: var(--offset);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.35s ease 0.75s;
+  z-index: 10;
+}
+
+.content-wrapper{
+  text-align: center;
+}
+
+.container.active .content{
+  opacity: 1;
+  transform: none;
+}
+
+.container.active .popup{
+  opacity: 1;
+  visibility: visible;
+}
+
+.container.active .popup-inside{
+  border-radius: 0;
+  box-shadow: -50px 0 200px -50px #504bff, 50px 0 200px -50px #4cfa63;
+}
+
+.container.active .background{
+  transform: scale(1);
+}
+
+.container.active .background6{
+  transform: scale(8);
+}
+

@@ -1,0 +1,45 @@
+<div class="container" [class.active] = "isActiveBtn == true">
+<!--  <div class="secret_btn">-->
+<!--    <p> ты что-то хочешь?</p>-->
+<!--  </div>-->
+  <div class="wrapper">
+    <div class="button secret_btn" (click)="clickButton()">
+      <span class="button-text">ты что-то хочешь?</span>
+
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="popup">
+      <div class="popup-inside">
+        <div class="backgrounds">
+          <div class="background"></div>
+          <div class="background background2"></div>
+          <div class="background background3"></div>
+          <div class="background background4"></div>
+          <div class="background background5"></div>
+          <div class="background background6"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-wrapper">
+          <h1>а кто это тут сладенькая</h1>
+          <img class="syrnikImg" src="assets/images/b364d3e668f7de807d3d10fa07d0ae88.png">
+          <p class="try-again" (click)="clickButton()">НЯМ НЯМ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider">
+    <ng-image-slider
+      [images]="imageObject" #nav
+    [imageSize]="{width: '200px', height: '250px', space: 10}"
+    [infinite]="true"
+    [animationSpeed]="0.1">
+
+    </ng-image-slider>
+  </div>
+
+
+</div>
