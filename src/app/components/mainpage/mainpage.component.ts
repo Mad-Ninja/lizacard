@@ -16,29 +16,29 @@ import {
 })
 export class MainPageComponent implements OnInit, OnDestroy {
   imageObject: Array<any> = [{
-    image: '../../../assets/images/20231017_153241.jpg',
-    thumbImage: '../../../assets/images/20231017_153241.jpg',
+    image: '../../../assets/images/1.png',
+    thumbImage: '../../../assets/images/1.png',
     alt: 'alt of image',
   },
     {
-    image: '../../../assets/images/20240113_212045.jpg',
-    thumbImage: '../../../assets/images/20240113_212045.jpg',
+    image: '../../../assets/images/2.png',
+    thumbImage: '../../../assets/images/2.png',
     alt: 'alt of image',
   },
     {
-    image: '../../../assets/images/20231125_164919.jpg',
-    thumbImage: '../../../assets/images/20231125_164919.jpg',
+    image: '../../../assets/images/3.png',
+    thumbImage: '../../../assets/images/3.png',
     alt: 'Image alt',
     order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
   },
     {
-      image: '../../../assets/images/20231114_170603.jpg',
-      thumbImage: '../../../assets/images/20231114_170603.jpg',
+      image: '../../../assets/images/4.png',
+      thumbImage: '../../../assets/images/4.png',
       alt: 'alt of image',
     },
     {
-      image: '../../../assets/images/20231120_223550.jpg',
-      thumbImage: '../../../assets/images/20231120_223550.jpg',
+      image: '../../../assets/images/5.png',
+      thumbImage: '../../../assets/images/5.png',
       alt: 'alt of image',
     },
   ];
