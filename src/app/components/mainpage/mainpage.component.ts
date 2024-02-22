@@ -37,8 +37,8 @@ export class MainPageComponent implements OnInit, OnDestroy {
       alt: 'alt of image',
     },
     {
-      image: './../../assets/images/5.png',
-      thumbImage: './../../assets/images/5.png',
+      image: './../../lizacard/assets/images/5.png',
+      thumbImage: './../../lizacard/assets/images/5.png',
       alt: 'alt of image',
     },
   ];
